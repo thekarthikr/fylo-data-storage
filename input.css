@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-img{
+    background: url('../images/bg-mobile.png');
+    @apply  bg-no-repeat w-full   bg-cover md:bg-none bg-VeryDarkBlue;   
+}
+
+@media screen and (min-width:768px){
+    .bg-img-desktop{
+        background: url('../images/bg-desktop.png');
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        height: 50vh;
+        @apply z-20 ;
+        
+    }
+}
+
+@media screen and (min-width:768px){
+    .storage::after{
+    @apply content-[''] absolute border-t-[30px] border-t-white border-l-[30px] border-l-transparent right-0 -bottom-[1.2em]
+            }
+            
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Frontend Mentor | Fylo data storage component</title>
+  </head>
+  <body>
+    <main class="bg-img w-full h-screen flex items-center justify-center px-6">
+      <div
+        class="flex z-30 flex-col space-y-4 md:space-y-0 md:space-x-4 md:flex-row"
+      >
+        <div
+          class="flex flex-col space-y-8 bg-DarkBlue p-12 rounded-tl-xl rounded-bl-xl rounded-br-xl rounded-tr-[90px]"
+        >
+          <img class="w-32 md:w-36" src="./images/logo.svg" alt="" />
+          <div class="flex space-x-8">
+            <div class="bg-VeryDarkBlue p-3 rounded-lg flex items-center">
+              <img src="./images/icon-document.svg" alt="" />
+            </div>
+            <div class="bg-VeryDarkBlue p-3 rounded-lg flex items-center">
+              <img src="./images/icon-folder.svg" alt="" />
+            </div>
+            <div class="bg-VeryDarkBlue p-3 rounded-lg flex items-center">
+              <img src="./images/icon-upload.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div
+          class="relative bg-DarkBlue rounded-xl flex flex-col space-y-4 justify-center md:w-[28rem] p-14"
+        >
+          <p class="text-PaleBlue">
+            You've used <span class="font-bold text-emerald-50">815GB</span> of
+            your storage
+          </p>
+          <div class="w-full h-5 p-[3px] bg-VeryDarkBlue rounded-full">
+            <div
+              class="relative w-4/5 h-full bg-gradient-to-tr from-[#ffa399] to-[#ff4d97] rounded-full"
+            >
+              <div
+                class="w-3 h-3 rounded-full bg-white absolute top-[1px] right-1"
+              ></div>
+            </div>
+          </div>
+          <div
+            class="flex items-center text-PaleBlue text-xs font-bold justify-between"
+          >
+            <p>0GB</p>
+            <p>1000GB</p>
+          </div>
+          <div
+            class="h-fit absolute -bottom-8 translate-x-14 flex items-center bg-white rounded-lg p-4 space-x-2 storage md:-top-14 md:right-20 md:p-2"
+          >
+            <p class="font-bold text-4xl text-VeryDarkBlue">185</p>
+            <p class="uppercase text-xs font-bold text-GrayishBlue">gb left</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="bg-img-desktop"></div>
+  </body>
+</html>
